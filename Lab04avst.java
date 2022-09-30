@@ -20,7 +20,7 @@ public class Lab04avst
         double denominator = Math.pow(1+mothlyRate,nummoths)-1;
 
 
-        double soulution =(numerator/denominator)*250000;
+        double mothlypayment =(numerator/denominator)*250000;
 
 
 
@@ -30,7 +30,7 @@ public class Lab04avst
         System.out.println("Annual Rate:          " + annualRate + "%");
         System.out.println("Number of Years:      " + numYears);
 
-        System.out.println("Monthly Payment:      $" + soulution);
+        System.out.println("Monthly Payment:      $" + mothlypayment);
 
     }
 }
