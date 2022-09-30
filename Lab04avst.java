@@ -13,14 +13,24 @@ public class Lab04avst
         double annualRate = 4.85;
         double numYears   = 30;
 
+        double mothlyRate = (annualRate/100) / 12;
+        double nummoths = numYears * 12;
+
+        double numerator = mothlyRate * Math.pow(1+mothlyRate,nummoths);
+        double denominator = Math.pow(1+mothlyRate,nummoths)-1;
+
+
+        double soulution =(numerator/denominator)*250000;
 
 
 
 
 
+        System.out.println("Principal:            $" + principal);
+        System.out.println("Annual Rate:          " + annualRate + "%");
+        System.out.println("Number of Years:      " + numYears);
 
+        System.out.println("Monthly Payment:      $" + soulution);
 
-
-        System.out.println();
     }
 }
